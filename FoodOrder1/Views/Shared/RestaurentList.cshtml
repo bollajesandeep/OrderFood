@@ -1,0 +1,13 @@
+﻿@model Restaurent
+
+<div class="col-sm-4 col-lg-4 col-md-4">
+    <div class="thumbnail">
+        <img src='~/images/@Model.ImgThumbnailUrl' alt="" />
+        <div class="caption">
+            <h3 class="pull-right">Rating- @Model.Rating</h3>
+            <h3><a asp-controller="Restaurent" asp-action="List" asp-route-RestaurentId="@Model.RestaurentId">@Model.RestaurentName</a> </h3>
+            <p>@Model.LongDescription</p>
+        </div>
+
+    </div>
+</div>

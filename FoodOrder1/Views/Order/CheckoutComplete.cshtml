@@ -1,0 +1,20 @@
+﻿@using Microsoft.Extensions.Options
+@inject IOptions<FoodOrder1.Data.Models.StripeSettings> Stripe
+<h1>
+    @ViewBag.CheckoutCompleteMessage
+</h1>
+<div class="text-center">
+    <form asp-action="Charge" asp-controller="Home" method="post">
+        <article>
+           <img src="~/images/payment.jpg"/>
+        </article>
+        <script src="//checkout.stripe.com/v2/checkout.js"
+                class="stripe-button"
+                data-key="@Stripe.Value.PublishableKey"
+                data-locale="auto"
+                data-description="Payment Mode">
+
+        </script>
+
+    </form>
+</div>

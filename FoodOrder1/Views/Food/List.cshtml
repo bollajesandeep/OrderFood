@@ -1,0 +1,15 @@
+﻿
+<div>
+    All foods are shown here
+</div>
+
+<h2>@Model.CurrentCategory</h2>
+
+@{
+    foreach (Food food in Model.Foods)
+    {
+       @await Html.PartialAsync("FoodSummary",food)
+
+    }
+}
+

@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>WinExe</OutputType>
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200406112345_InitialMigration.cs" />
+    <Compile Remove="Migrations\20200406112345_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20200406131635_FoodInitialMigration.cs" />
+    <Compile Remove="Migrations\20200406131635_FoodInitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20200406141148_InitialFoodMigration.cs" />
+    <Compile Remove="Migrations\20200406141148_InitialFoodMigration.Designer.cs" />
+    <Compile Remove="Migrations\20200407045947_InitialEmp.cs" />
+    <Compile Remove="Migrations\20200407045947_InitialEmp.Designer.cs" />
+    <Compile Remove="Migrations\20200407050818_EmployeeInitialTest.cs" />
+    <Compile Remove="Migrations\20200407050818_EmployeeInitialTest.Designer.cs" />
+    <Compile Remove="Migrations\20200407052334_InitialCreated.cs" />
+    <Compile Remove="Migrations\20200407052334_InitialCreated.Designer.cs" />
+    <Compile Remove="Migrations\20200407064320_InitialCreatee.cs" />
+    <Compile Remove="Migrations\20200407064320_InitialCreatee.Designer.cs" />
+    <Compile Remove="Migrations\20200407065752_InitialMigration.cs" />
+    <Compile Remove="Migrations\20200407065752_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20200407141406_FoodMigration.cs" />
+    <Compile Remove="Migrations\20200407141406_FoodMigration.Designer.cs" />
+    <Compile Remove="Migrations\20200408062138_FoodOrderInitial.cs" />
+    <Compile Remove="Migrations\20200408062138_FoodOrderInitial.Designer.cs" />
+    <Compile Remove="Migrations\20200409112205_OrderMigrationInitital.cs" />
+    <Compile Remove="Migrations\20200409112205_OrderMigrationInitital.Designer.cs" />
+    <Compile Remove="Migrations\20200410145653_FoodOnline.cs" />
+    <Compile Remove="Migrations\20200410145653_FoodOnline.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+    <PackageReference Include="Stripe.net" Version="35.12.0" />
+  </ItemGroup>
+
+</Project>

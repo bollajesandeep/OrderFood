@@ -43,7 +43,7 @@ namespace FoodOrder1.Controllers
             }
             return RedirectToAction("Index");
         }
-
+        //Remove from shopping cart
         public RedirectToActionResult RemoveFromShoppingCart(int FoodId)
         {
             var selectedFood = _foodRepository.Foods.FirstOrDefault(p => p.FoodId == FoodId);

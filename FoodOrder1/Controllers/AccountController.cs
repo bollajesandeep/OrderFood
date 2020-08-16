@@ -32,7 +32,7 @@ namespace FoodOrder1.Controllers
                 ReturnUrl = returnUrl
             });
         }
-
+        //Login method
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel loginViewModel)
         {
@@ -80,7 +80,7 @@ namespace FoodOrder1.Controllers
 
         public ViewResult LoggedIn() => View();
 
-
+       //added logout 
         [HttpPost]
         [Authorize]
         public async Task<IActionResult> Logout()

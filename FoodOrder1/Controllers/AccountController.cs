@@ -60,6 +60,7 @@ namespace FoodOrder1.Controllers
 
         public IActionResult Register() => View();
 
+        //Register method
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(LoginViewModel loginViewModel)

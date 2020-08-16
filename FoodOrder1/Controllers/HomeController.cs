@@ -18,6 +18,7 @@ namespace FoodOrder1.Controllers
         {
             _foodRepository = foodRepository;
         }
+        //Home page
         public ViewResult Index()
         {
             var homeViewModel = new HomeViewModel

@@ -46,6 +46,7 @@ namespace FoodOrder1.Controllers
                 CurrentCategory = currentCategory
             });
         }
+        //added search comment
         public ViewResult Search(string searchString)
         {
             string _searchString = searchString;

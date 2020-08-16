@@ -19,6 +19,7 @@ namespace FoodOrder1.Controllers
             _foodRepository = foodRepository;
             _shoppingCart = shoppingCart;
         }
+        //Shopping cart
         public ViewResult Index()
         {
             var items = _shoppingCart.GetShoppingCartItems();

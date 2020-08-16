@@ -63,7 +63,7 @@ namespace FoodOrder1.Controllers
 
             return View("~/Views/Food/List.cshtml", new FoodListViewModel { Foods = foods, CurrentCategory = "All foods" });
         }
-
+        //Details explained
         public ViewResult Details(int foodId)
         {
             var food = _foodRepository.Foods.FirstOrDefault(d => d.FoodId == foodId);

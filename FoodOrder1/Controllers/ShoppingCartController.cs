@@ -32,6 +32,7 @@ namespace FoodOrder1.Controllers
 
             return View(sCVM);
         }
+        //Add to shopping cart comment
         public RedirectToActionResult AddToShoppingCart(int foodId)
         {
             var selectedFood = _foodRepository.Foods.FirstOrDefault(p => p.FoodId == foodId);

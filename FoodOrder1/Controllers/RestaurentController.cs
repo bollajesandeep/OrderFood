@@ -24,6 +24,7 @@ namespace FoodOrder1.Controllers
         {
             return View();
         }
+        //Restaurent List
         public ViewResult List(string category)
         {
             string _category = category;

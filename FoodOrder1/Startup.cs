@@ -45,7 +45,14 @@ namespace FoodOrder1
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            //var server = Configuration["DBServer"] ?? "PC";
+            //var port = Configuration["DBPort"] ?? "1443";
+            //var user = Configuration["DBUser"] ?? "SA";
+            //var password = Configuration["DBPassword"] ?? "Sandeep123";
+            //var database = Configuration["Database"] ?? "FoodOrder";
+            //services.AddDbContext<AppDbContext>(options => options.UseSqlServer($"server ={server},{port}; Initial Catalog={database}; User ID= {user}; Password={password}"));
+
+             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<AppDbContext>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

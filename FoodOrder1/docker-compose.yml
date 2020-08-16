@@ -1,0 +1,18 @@
+﻿version: '3'
+services: 
+    db:
+        image: mcr.microsoft.com/mssql/server:2017-latest
+        environment:
+                ACCEPT_EULA : "Y"
+                SA_PASSWORD : "Sandeep123"
+                MSSQL_PID : Express
+        ports:
+            - "1433:1433"
+    mvc:
+        build : .
+        ports :
+         - "8888:80"
+        depends_on :
+        - "db"
+   
+   
